@@ -1,5 +1,5 @@
 # 🧠 headache
-A C brainfuck runtime for POSIX computers created in about ~1,5h.
+A C brainfuck runtime for POSIX computers created in about ~1.5h.
 
 ## How does headache work?
 Headaches first loads brainfuck code from a file provided as an argument. 
