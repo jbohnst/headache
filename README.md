@@ -1,6 +1,14 @@
 # 🧠 headache
 A C brainfuck runtime for POSIX computers created in about ~1.5h.
 
+## Usage
+headache takes a single argument: a path to a file containing brainfuck code.
+
+```bash
+./headache examples/hello-world.bf
+./headache <Path to brainfuck file>
+```
+
 ## How does headache work?
 Headaches first loads brainfuck code from a file provided as an argument. 
 Then, headache filters out only brainfuck-characters (those are `<>+-.,[]`) 
