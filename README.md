@@ -1,4 +1,4 @@
-# headache
+# 🧠 headache
 A C brainfuck runtime for POSIX computers created in about ~1,5h.
 
 ## How does headache work?
@@ -14,17 +14,17 @@ to fit the memory needed to run the program.
 Currently headache has some major performance flaws. Those can be fixed easily
 which I might do at some point:
 
-    -   Brainfuck commands (those are `<>+-.,[]`) are currently saved as 
-        char (0-256). This isn't necessary: There are only 8 directives 
-        which can be expressed by only 3 bits instead of 8. This means a
-        ***huge*** problem for modern computers, as Windows Explorer will
-        probably eat up all the remaining RAM, thus, every single bit of
-        RAM needs to be saved for it.
+-   Brainfuck commands (those are `<>+-.,[]`) are currently saved as 
+    char (0-256). This isn't necessary: There are only 8 directives 
+    which can be expressed by only 3 bits instead of 8. This means a
+    ***huge*** problem for modern computers, as Windows Explorer will
+    probably eat up all the remaining RAM, thus, every single bit of
+    RAM needs to be saved for it.
 
-    -   The whole code-file is loaded to RAM. This should not be done as
-        this means that there will be problems when loading files bigger
-        than the amount of RAM available. Files should be parted by a
-        fixed amount of characters or, if in a loop, the [ and ] directives.
+-   The whole code-file is loaded to RAM. This should not be done as
+    this means that there will be problems when loading files bigger
+    than the amount of RAM available. Files should be parted by a
+    fixed amount of characters or, if in a loop, the [ and ] directives.
 
 ## What is this project for?
 This project is something I wanted to do for myself for a longer time. I 
