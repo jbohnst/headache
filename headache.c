@@ -105,6 +105,7 @@ void bf_continueLoop() {
 
 /**
  * Runs the function for a brainfuck character
+ * @param c Current character to be executed by the runtime
  */
 void bf_runChar(char c) {
     switch(c) {
