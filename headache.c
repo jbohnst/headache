@@ -34,7 +34,7 @@ size_t memoryPos = 0;
 void bf_increasePointer() {
     // Allocate more memory if needed
     if(memoryPos == memorySize) {
-        int* newRuntimeMemory = realloc(runtimeMemory, memorySize + (size_t) 256);
+        int* newRuntimeMemory = realloc(runtimeMemory, memorySize + (sizeof(int) * (size_t) 256));
 
         if(newRuntimeMemory != NULL) {
             runtimeMemory = newRuntimeMemory;
